@@ -62,9 +62,10 @@ public class HelloWorldController {
                     }catch (Exception  e){
 
                     }
-                    if(!dateTime.isEmpty()&&(dateTimeOrginal==null||dateTimeOrginal.isEmpty())){
+                    if(!dateTime.isEmpty()&&dateTimeOrginal.isEmpty()){
+                         
                         dateTimeOrginal=dateTime;
-                    }else{
+                    }else if((dateTimeOrginal==null||dateTimeOrginal.isEmpty())){
                         dateTimeOrginal="Today";
                     }
                  System.out.println(dateTimeOrginal);
