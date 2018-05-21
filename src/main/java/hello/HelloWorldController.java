@@ -56,7 +56,7 @@ public class HelloWorldController {
             case "weather.temperature":
                     String city=weatherRequest.getResult().getParameters().getAddress().getCity();
                     String dateTime=weatherRequest.getResult().getParameters().getDateTime();
-                String dateTimeOrginal="Today";
+                    String dateTimeOrginal="Today";
                     try {
                         dateTimeOrginal = weatherRequest.getResult().getParameters().getDateTimeOriginal() != null ? weatherRequest.getResult().getParameters().getDateTimeOriginal() : weatherRequest.getResult().getContexts().get(0).getParameters().getDateTimeOriginal();
                     }catch (Exception  e){
