@@ -62,8 +62,10 @@ public class HelloWorldController {
                     }catch (Exception  e){
 
                     }
-                    if(dateTimeOrginal==null||dateTimeOrginal.isEmpty()){
+                    if(!dateTime.isEmpty()&&(dateTimeOrginal==null||dateTimeOrginal.isEmpty())){
                         dateTimeOrginal=dateTime;
+                    }else{
+                        dateTimeOrginal="Today";
                     }
                     String unit=weatherRequest.getResult().getParameters().getUnit();
                     DegreeUnit degreeUnit;
