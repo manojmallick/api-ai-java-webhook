@@ -79,7 +79,7 @@ public class HelloWorldController {
 
                         for (Channel channel:channels) {
                             System.out.println(channel.toString());
-                            if(dateTimeOrginal.equalsIgnoreCase("Today")) {
+                            if(dateTimeOrginal.equalsIgnoreCase("Today")&&(dateTime!=null||!dateTime.isEmpty())) {
                                 speach = dateTimeOrginal + " in " + channel.getLocation().getCity() + ": " + channel.getItem().getCondition().getText() +
                                         "," +
                                         " the temperature is " + channel.getItem().getCondition().getTemp() + " " + channel.getUnits().getTemperature();
