@@ -63,12 +63,11 @@ public class HelloWorldController {
 
                     }
                     if(!dateTime.isEmpty()&&dateTimeOrginal.isEmpty()){
-                         
                         dateTimeOrginal=dateTime;
                     }else if((dateTimeOrginal==null||dateTimeOrginal.isEmpty())){
                         dateTimeOrginal="Today";
                     }
-                 System.out.println(dateTimeOrginal);
+                System.out.println(dateTimeOrginal);
                     String unit=weatherRequest.getResult().getParameters().getUnit();
                     DegreeUnit degreeUnit;
                     if(unit!=null&&unit.equalsIgnoreCase("F")){
@@ -126,7 +125,6 @@ public class HelloWorldController {
     }
 
     private Forecast findTemperatureData(List<Forecast> forecasts ,String dateTime) {
-         System.out.println(dateTime);
         SimpleDateFormat format =
                 new SimpleDateFormat("dd MMM yyyy");
         SimpleDateFormat old =
