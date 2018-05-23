@@ -1,5 +1,8 @@
 package hello;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class WeatherRequestWithAddress {
     private String id;
     private String lang;

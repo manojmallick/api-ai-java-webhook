@@ -1,7 +1,8 @@
 package hello;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
-
+@XmlRootElement
 public class WeatherRequest {
     private String id;
     private String lang;
