@@ -2,9 +2,10 @@ package hello;
 
 public class Messages
 {
-    private Movies payLoad;
 
+    private String speech;
     private int type;
+    private Movies payLoad;
 
     public Movies getPayLoad() {
         return payLoad;
@@ -20,5 +21,13 @@ public class Messages
 
     public void setType(int type) {
         this.type = type;
+    }
+
+    public String getSpeech() {
+        return speech;
+    }
+
+    public void setSpeech(String speech) {
+        this.speech = speech;
     }
 }

@@ -91,10 +91,10 @@ public class SecondHelloWorldController {
         String json=gson1.toJson(movies);
         System.out.println(json);
         Messages messages=new Messages();
+        messages.setSpeech("Movie response for top movies");
         messages.setType(4);
         Movies moviesList=new Movies();
         moviesList.setMovies(movies);
-        messages.setPayLoad(moviesList);
         messages.setPayLoad(moviesList);
         Messages [] messages1=new Messages[1];
         messages1[0]=messages;
