@@ -95,7 +95,7 @@ public class SecondHelloWorldController {
         messages.setType(4);
         Movies moviesList=new Movies();
         moviesList.setMovies(movies);
-        messages.setPayLoad(moviesList);
+        messages.setPayload(moviesList);
         Messages [] messages1=new Messages[1];
         messages1[0]=messages;
         WebhookResponseModified webhookResponseModified=new WebhookResponseModified("movie response","movie list");

@@ -5,14 +5,14 @@ public class Messages
 
     private String speech;
     private int type;
-    private Movies payLoad;
+    private Movies payload;
 
-    public Movies getPayLoad() {
-        return payLoad;
+    public Movies getPayload() {
+        return payload;
     }
 
-    public void setPayLoad(Movies payLoad) {
-        this.payLoad = payLoad;
+    public void setPayload(Movies payload) {
+        this.payload = payload;
     }
 
     public int getType() {
